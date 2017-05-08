@@ -13,7 +13,8 @@
 git clone git@github.com:Lima97combr/lima97.git
 cd lima97
 python -m venv .venv
-source .venv/bin/activate
+.venv\Scripts\activate * Windows
+source .venv/bin/activate * Ubuntu
 pip install -r requirements-dev.txt
 cp contrib/env-sample .env
 python manage.py test
